@@ -1,0 +1,10 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# Model_IC
+
+Model-based intrinsic capacity composite score
+
+Statistical codes and main results for the paper, “Development,
+validity, and utility of a model-based intrinsic capacity composite
+score in community-dwelling older persons”.
