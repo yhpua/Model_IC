@@ -3474,7 +3474,7 @@ Score residual plots
 <div class="no-row-height column-margin column-container"><div class>
 <p>Acknowledgement<br>
 Calibration plot codes were adapted from those generously shared by <a href="https://discourse.datamethods.org/t/critique-of-a-published-prediction-model/13882">Elias_Eythorsson</a></p>
-</div></div><div class="cell" data-hash="Model_based_IC_cache/html/unnamed-chunk-11_deacb1d968787889e5149e5d442aaf48">
+</div></div><div class="cell" data-hash="Model_based_IC_cache/html/unnamed-chunk-11_7cfe4cd12a5fa19d8e6802d54814461a">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Step 1: Group comparison of Predicted and Observed Probs   </span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> <span class="fu">makeCluster</span>(<span class="fu">detectCores</span>()<span class="sc">-</span><span class="dv">2</span>, <span class="at">type=</span><span class="st">&#39;PSOCK&#39;</span>)</span>
@@ -3529,7 +3529,7 @@ Calibration plot codes were adapted from those generously shared by <a href="htt
 <span id="cb31-52"><a href="#cb31-52" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-53"><a href="#cb31-53" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> <span class="fu">makeCluster</span>(<span class="fu">detectCores</span>()<span class="sc">-</span><span class="dv">2</span>, <span class="at">type=</span><span class="st">&#39;PSOCK&#39;</span>)</span>
 <span id="cb31-54"><a href="#cb31-54" aria-hidden="true" tabindex="-1"></a><span class="fu">registerDoParallel</span>(cl)</span>
-<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a>cal_curve <span class="ot">&lt;-</span>   <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>, </span>
+<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a>cal_curve <span class="ot">&lt;-</span>   <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>, </span>
 <span id="cb31-56"><a href="#cb31-56" aria-hidden="true" tabindex="-1"></a>                       <span class="at">.errorhandling =</span> <span class="st">&quot;remove&quot;</span>,</span>
 <span id="cb31-57"><a href="#cb31-57" aria-hidden="true" tabindex="-1"></a>                       <span class="at">.packages =</span> <span class="fu">c</span>(<span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;rms&quot;</span>)) <span class="sc">%dopar%</span> {</span>
 <span id="cb31-58"><a href="#cb31-58" aria-hidden="true" tabindex="-1"></a>                         </span>
@@ -4329,7 +4329,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb38-321"><a href="#cb38-321" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb38-322"><a href="#cb38-322" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> <span class="fu">makeCluster</span>(<span class="fu">detectCores</span>()<span class="sc">-</span><span class="dv">2</span>, <span class="at">type=</span><span class="st">&#39;PSOCK&#39;</span>)</span>
 <span id="cb38-323"><a href="#cb38-323" aria-hidden="true" tabindex="-1"></a><span class="fu">registerDoParallel</span>(cl)</span>
-<span id="cb38-324"><a href="#cb38-324" aria-hidden="true" tabindex="-1"></a>cal_curve <span class="ot">&lt;-</span>   <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>, </span>
+<span id="cb38-324"><a href="#cb38-324" aria-hidden="true" tabindex="-1"></a>cal_curve <span class="ot">&lt;-</span>   <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>, </span>
 <span id="cb38-325"><a href="#cb38-325" aria-hidden="true" tabindex="-1"></a>                       <span class="at">.errorhandling =</span> <span class="st">&quot;remove&quot;</span>,</span>
 <span id="cb38-326"><a href="#cb38-326" aria-hidden="true" tabindex="-1"></a>                       <span class="at">.packages =</span> <span class="fu">c</span>(<span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;rms&quot;</span>)) <span class="sc">%dopar%</span> {</span>
 <span id="cb38-327"><a href="#cb38-327" aria-hidden="true" tabindex="-1"></a>                         </span>
